@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Licensed to the Apache Software Foundation (ASF) under one or more
-  ~ contributor license agreements. See the NOTICE file distributed with
-  ~ this work for additional information regarding copyright ownership.
-  ~ The ASF licenses this file to You under the Apache license, Version 2.0
-  ~ (the "License"); you may not use this file except in compliance with
-  ~ the License. You may obtain a copy of the License at
-  ~
-  ~      http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the license for the specific language governing permissions and
-  ~ limitations under the license.
-  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.logging.log4j</groupId>
@@ -26,7 +9,7 @@
     <groupId>org.apache.logging</groupId>
     <artifactId>logging-parent</artifactId>
     <version>3</version>
-    <relativePath/>
+    <relativePath />
   </parent>
   <description>Apache Log4j 2</description>
   <url>https://logging.apache.org/log4j/2.x/</url>
@@ -111,7 +94,7 @@
     </developer>
     <developer>
       <id>mikes</id>
-      <name>Mikael Ståldal</name>
+      <name>Mikael St&#229;ldal</name>
       <email>mikes@apache.org</email>
       <organization>Spotify</organization>
       <roles>
@@ -134,7 +117,7 @@
     </developer>
     <developer>
       <id>vy</id>
-      <name>Volkan Yazıcı</name>
+      <name>Volkan Yaz&#305;c&#305;</name>
       <email>vy@apache.org</email>
       <roles>
         <role>PMC Member</role>
@@ -142,7 +125,7 @@
       <timezone>Europe/Amsterdam</timezone>
     </developer>
   </developers>
-  <!-- Contributors -->
+  
   <contributors>
       <contributor>
         <name>Murad Ersoy</name>
@@ -204,14 +187,14 @@
     <tag>log4j-${Log4jReleaseVersion}</tag>
   </scm>
   <properties>
-    <!-- make sure to update these for each release! -->
+    
     <log4jParentDir>${basedir}</log4jParentDir>
     <Log4jReleaseVersion>2.10.0</Log4jReleaseVersion>
     <Log4jReleaseManager>Ralph Goers</Log4jReleaseManager>
     <Log4jReleaseKey>B3D8E1BA</Log4jReleaseKey>
-    <!--<Log4jReleaseManager>Matt Sicker</Log4jReleaseManager> -->
-    <!--<Log4jReleaseKey>748F15B2CF9BA8F024155E6ED7C92B70FA1C814D</Log4jReleaseKey> -->
-    <!-- note that any properties you want available in velocity templates must not use periods! -->
+    
+    
+    
     <slf4jVersion>1.7.30</slf4jVersion>
     <logbackVersion>1.2.3</logbackVersion>
     <jackson1Version>1.9.13</jackson1Version>
@@ -232,9 +215,9 @@
     <spotbugs.version>4.1.2</spotbugs.version>
     <changes.plugin.version>2.12.1</changes.plugin.version>
     <javadoc.plugin.version>3.2.0</javadoc.plugin.version>
-    <!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->
-    <!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->
-    <!-- all versions after 2.13 yield https://issues.apache.org/jira/browse/SUREFIRE-720 -->
+    
+    
+    
     <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
     <failsafe.plugin.version>2.22.2</failsafe.plugin.version>
     <checkstyle.plugin.version>3.0.0</checkstyle.plugin.version>
@@ -249,8 +232,8 @@
     <revapi.plugin.version>0.12.2</revapi.plugin.version>
     <revapi.skip>true</revapi.skip>
     <site.plugin.version>3.8.2</site.plugin.version>
-    <!-- Maven site depends on Velocity and the escaping rules are different in newer versions. -->
-    <!-- See https://maven.apache.org/plugins/maven-site-plugin/migrate.html -->
+    
+    
     <velocity.plugin.version>1.5</velocity.plugin.version>
     <asciidoc.plugin.version>1.5.6</asciidoc.plugin.version>
     <errorprone.version>2.7.1</errorprone.version>
@@ -262,7 +245,7 @@
     <maven.compiler.release>11</maven.compiler.release>
     <maven.doap.skip>false</maven.doap.skip>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- 1641056400 = Jan 1 2022, instead of 1969, which shows up in Javadoc -->
+    
     <project.build.outputTimestamp>1641056400</project.build.outputTimestamp>
     <docLabel>Site Documentation</docLabel>
     <projectDir />
@@ -270,7 +253,7 @@
     <javax.persistence>2.2.1</javax.persistence>
     <osgi.api.version>1.10.0</osgi.api.version>
     <activemq.version>5.16.2</activemq.version>
-    <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
+    
     <minSeverity>info</minSeverity>
     <jctoolsVersion>3.3.0</jctoolsVersion>
     <junitVersion>4.13.2</junitVersion>
@@ -287,14 +270,14 @@
       <id>apache</id>
       <url>https://repository.apache.org/content/repositories/releases/</url>
     </pluginRepository>
-<!--     <pluginRepository> -->
-<!--       <id>apache.snapshots</id> -->
-<!--       <name>Apache snapshots repository</name> -->
-<!--       <url>http://repository.apache.org/content/groups/snapshots</url> -->
-<!--       <snapshots> -->
-<!--         <enabled>true</enabled> -->
-<!--       </snapshots> -->
-<!--     </pluginRepository>     -->
+
+
+
+
+
+
+
+
   </pluginRepositories>
   <dependencyManagement>
     <dependencies>
@@ -630,7 +613,7 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <!-- Jackson 1 start -->
+      
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-core-asl</artifactId>
@@ -643,8 +626,8 @@
         <version>${jackson1Version}</version>
         <scope>runtime</scope>
       </dependency>
-      <!-- Jackson 1 end -->
-      <!-- Jackson 2 start -->
+      
+      
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
@@ -681,7 +664,7 @@
         <version>${jackson2Version}</version>
         <optional>true</optional>
       </dependency>
-      <!-- Jackson 2 end -->
+      
       <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
@@ -729,7 +712,7 @@
         <artifactId>jctools-core</artifactId>
         <version>${jctoolsVersion}</version>
       </dependency>
-      <!-- JUnit 5 engine -->
+      
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
@@ -745,7 +728,7 @@
         <artifactId>junit-pioneer</artifactId>
         <version>${junitPioneerVersion}</version>
       </dependency>
-      <!-- JUnit 4 to 5 migration support -->
+      
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-migrationsupport</artifactId>
@@ -756,13 +739,13 @@
         <artifactId>junit-platform-commons</artifactId>
         <version>1.8.2</version>
       </dependency>
-      <!-- JUnit 5 parameterized test support -->
+      
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
         <version>${junitJupiterVersion}</version>
       </dependency>
-      <!-- JUnit 4 API dependency -->
+      
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -774,7 +757,7 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <!-- JUnit 4 engine -->
+      
       <dependency>
         <groupId>org.junit.vintage</groupId>
         <artifactId>junit-vintage-engine</artifactId>
@@ -911,7 +894,7 @@
       <dependency>
         <groupId>com.datastax.cassandra</groupId>
         <artifactId>cassandra-driver-core</artifactId>
-        <version>3.1.4</version>
+        <version>4.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.liquibase</groupId>
@@ -954,7 +937,7 @@
         <version>2.11.0</version>
         <scope>test</scope>
       </dependency>
-      <!-- Used for testing JsonTemplateLayout -->
+      
       <dependency>
         <groupId>co.elastic.logging</groupId>
         <artifactId>log4j2-ecs-layout</artifactId>
@@ -965,7 +948,7 @@
         <artifactId>elasticsearch-rest-high-level-client</artifactId>
         <version>${elastic.version}</version>
       </dependency>
-      <!-- Used for testing HttpAppender -->
+      
       <dependency>
         <groupId>com.github.tomakehurst</groupId>
         <artifactId>wiremock</artifactId>
@@ -978,7 +961,7 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <!-- Used for compressing to formats other than zip and gz -->
+      
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
@@ -990,13 +973,13 @@
         <version>1.9</version>
         <scope>test</scope>
       </dependency>
-      <!-- Used for the CSV layout -->
+      
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-csv</artifactId>
         <version>1.8</version>
       </dependency>
-      <!-- GC-free -->
+      
       <dependency>
         <groupId>com.google.code.java-allocation-instrumenter</groupId>
         <artifactId>java-allocation-instrumenter</artifactId>
@@ -1038,13 +1021,13 @@
       </dependency>
 
       <dependency>
-        <!-- Testing MongoDB -->
+        
         <groupId>de.flapdoodle.embed</groupId>
         <artifactId>de.flapdoodle.embed.mongo</artifactId>
         <version>2.2.0</version>
         <scope>test</scope>
       </dependency>
-      <!-- Testing LDAP -->
+      
       <dependency>
         <groupId>org.zapodot</groupId>
         <artifactId>embedded-ldap-junit</artifactId>
@@ -1053,7 +1036,7 @@
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
-        <!-- https://javadoc.io/doc/com.google.guava/guava-testlib/latest/com/google/common/testing/TestLogHandler.html used in log4j-to-jul tests -->
+        
         <artifactId>guava-testlib</artifactId>
         <version>31.0.1-jre</version>
         <scope>test</scope>
@@ -1107,9 +1090,9 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${javadoc.plugin.version}</version>
           <configuration>
-            <bottom><![CDATA[<p align="center">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.<br />
+            <bottom>&lt;p align="center"&gt;Copyright &amp;#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.&lt;br /&gt;
             Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, the Apache Logging project logo,
-            and the Apache Log4j logo are trademarks of The Apache Software Foundation.</p>]]></bottom>
+            and the Apache Log4j logo are trademarks of The Apache Software Foundation.&lt;/p&gt;</bottom>
             <additionalparam>${javadoc.opts}</additionalparam>
           </configuration>
         </plugin>
@@ -1123,7 +1106,7 @@
           <artifactId>maven-processor-plugin</artifactId>
           <version>5.0-rc1</version>
         </plugin>
-        <!-- some nice default compiler options -->
+        
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -1142,10 +1125,7 @@
             <compilerArgs>
               <arg>-XDcompilePolicy=simple</arg>
               <arg>-Xplugin:ErrorProne</arg>
-              <!--
-              https://errorprone.info/docs/installation
-              in Java 16+, https://openjdk.java.net/jeps/396 encapsulates internals that errorprone needs
-              -->
+              
               <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</arg>
               <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
               <arg>-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
@@ -1242,7 +1222,7 @@
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>${spotbugs.plugin.version}</version>
           <dependencies>
-            <!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
+            
             <dependency>
               <groupId>com.github.spotbugs</groupId>
               <artifactId>spotbugs</artifactId>
@@ -1315,7 +1295,7 @@
         <executions>
           <execution>
             <id>copy-sitecss</id>
-            <!-- fetch site.xml before creating site documentation -->
+            
             <phase>pre-site</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -1403,17 +1383,15 @@
           </dependency>
         </dependencies>
         <configuration>
-          <!-- only build English site even on other language OS -->
+          
           <locales>en</locales>
-          <!-- Exclude the navigation file for Maven 1 sites
-               and the changes file used by the changes-plugin,
-               as they interfere with the site generation. -->
+          
           <moduleExcludes>
             <xdoc>navigation.xml,changes.xml</xdoc>
           </moduleExcludes>
           <asciidoc>
             <attributes>
-              <!-- copy any site properties wanted in asciidoc files -->
+              
               <Log4jReleaseVersion>${Log4jReleaseVersion}</Log4jReleaseVersion>
               <Log4jReleaseManager>${Log4jReleaseManager}</Log4jReleaseManager>
               <Log4jReleaseKey>${Log4jReleaseKey}</Log4jReleaseKey>
@@ -1421,19 +1399,8 @@
           </asciidoc>
         </configuration>
       </plugin>
-      <!-- <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>clean</id>
-            <goals>
-              <goal>clean</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin> -->
-      <!-- We need to disable the standard ASF configuration to be able to publish our own notice and license files -->
+      
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
@@ -1470,7 +1437,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
-      <!-- RAT report -->
+      
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
@@ -1478,27 +1445,27 @@
         <configuration>
           <consoleOutput>true</consoleOutput>
           <excludes>
-            <!-- Matches other RAT configurations in this POM -->
+            
             <exclude>src/main/resources/META-INF/services/**/*</exclude>
-            <!-- IntelliJ files -->
+            
             <exclude>.idea/**/*</exclude>
             <exclude>src/test/resources/**/*</exclude>
-            <!-- IDE settings imports -->
+            
             <exclude>src/ide/**</exclude>
-            <!-- does it even make sense to apply a license to a GPG signature? -->
+            
             <exclude>**/*.asc</exclude>
-            <!-- jQuery is MIT-licensed, but RAT can't figure it out -->
+            
             <exclude>src/site/resources/js/jquery.js</exclude>
             <exclude>src/site/resources/js/jquery.min.js</exclude>
-            <!-- highlight.js is BSD3-licensed -->
+            
             <exclude>src/site/resources/js/highlight.pack.js</exclude>
-            <!-- Generated files -->
+            
             <exclude>log4j-distribution/target/**/*</exclude>
             <exclude>log4j-distribution/.project</exclude>
             <exclude>log4j-distribution/.settings/**</exclude>
             <exclude>**/.toDelete</exclude>
             <exclude>velocity.log</exclude>
-            <!-- Other -->
+            
             <exclude>felix-cache/**</exclude>
             <exclude>**/*.md</exclude>
             <exclude>**/*.yml</exclude>
@@ -1510,18 +1477,9 @@
             <exclude>**/MANIFEST.MF</exclude>
           </excludes>
         </configuration>
-        <!-- Turn this one once it passes, not before.
-        <executions>
-          <execution>
-            <phase>verify</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-        -->
+        
       </plugin>
-      <!-- DOAP (RDF) metadata generation -->
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-doap-plugin</artifactId>
@@ -1571,7 +1529,7 @@
               <analysisConfigurationFiles>
                 <path>revapi.json</path>
               </analysisConfigurationFiles>
-              <analysisConfiguration><![CDATA[
+              <analysisConfiguration>
 [
   {
      "extension": "revapi.java",
@@ -1601,7 +1559,7 @@
      }
   }
 ]
-              ]]></analysisConfiguration>
+              </analysisConfiguration>
             </configuration>
           </execution>
         </executions>
@@ -1610,7 +1568,7 @@
   </build>
   <reporting>
     <plugins>
-      <!-- Changes report -->
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
@@ -1653,7 +1611,7 @@
           </reportSet>
         </reportSets>
         <configuration>
-          <!-- you'd think these would be the defaults, right? -->
+          
           <customBundle>${project.basedir}/src/site/custom/project-info-report.properties</customBundle>
           <webAccessUrl>${project.scm.url}</webAccessUrl>
           <anonymousConnection>${project.scm.connection}</anonymousConnection>
@@ -1661,7 +1619,7 @@
           <scmTag>log4j-${Log4jReleaseVersion}</scmTag>
         </configuration>
       </plugin>
-      <!-- Surefire report -->
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
@@ -1675,7 +1633,7 @@
           </reportSet>
         </reportSets>
       </plugin>
-      <!-- RAT report -->
+      
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
@@ -1683,27 +1641,27 @@
         <configuration>
           <consoleOutput>true</consoleOutput>
           <excludes>
-            <!-- Matches other RAT configurations in this POM -->
+            
             <exclude>src/main/resources/META-INF/services/**/*</exclude>
-            <!-- IntelliJ files -->
+            
             <exclude>.idea/**/*</exclude>
             <exclude>src/test/resources/**/*</exclude>
-            <!-- IDE settings imports -->
+            
             <exclude>src/ide/**</exclude>
-            <!-- does it even make sense to apply a license to a GPG signature? -->
+            
             <exclude>**/*.asc</exclude>
-            <!-- jQuery is MIT-licensed, but RAT can't figure it out -->
+            
             <exclude>src/site/resources/js/jquery.js</exclude>
             <exclude>src/site/resources/js/jquery.min.js</exclude>
-            <!-- highlight.js is BSD3-licensed -->
+            
             <exclude>src/site/resources/js/highlight.pack.js</exclude>
-            <!-- Generated files -->
+            
             <exclude>log4j-distribution/target/**/*</exclude>
             <exclude>log4j-distribution/.project</exclude>
             <exclude>log4j-distribution/.settings/**</exclude>
             <exclude>**/.toDelete</exclude>
             <exclude>velocity.log</exclude>
-            <!-- Other -->
+            
             <exclude>felix-cache/**</exclude>
             <exclude>**/*.md</exclude>
             <exclude>**/*.yml</exclude>
@@ -1732,7 +1690,7 @@
   </reporting>
   <distributionManagement>
     <downloadUrl>https://logging.apache.org/log4j/2.x/download.html</downloadUrl>
-    <!-- site is only included to make maven-site-plugin stop complaining -->
+    
     <site>
       <id>www.example.com</id>
       <url>scp://www.example.com/www/docs/project/</url>
@@ -1835,7 +1793,7 @@
               <announcementFile>RELEASE-NOTES.md</announcementFile>
               <issueManagementSystems>
                 <issueManagementSystem>changes.xml</issueManagementSystem>
-                <!--<issueManagementSystem>JIRA</issueManagementSystem> -->
+                
               </issueManagementSystems>
               <version>${Log4jReleaseVersion}</version>
               <announceParameters>
@@ -1882,7 +1840,7 @@
       <id>rat</id>
       <build>
         <plugins>
-          <!-- RAT report -->
+          
           <plugin>
             <groupId>org.apache.rat</groupId>
             <artifactId>apache-rat-plugin</artifactId>
@@ -1890,27 +1848,27 @@
             <configuration>
               <consoleOutput>true</consoleOutput>
               <excludes>
-                <!-- Matches other RAT configurations in this POM -->
+                
                 <exclude>src/main/resources/META-INF/services/**/*</exclude>
-                <!-- IntelliJ files -->
+                
                 <exclude>.idea/**/*</exclude>
                 <exclude>src/test/resources/**/*</exclude>
-                <!-- IDE settings imports -->
+                
                 <exclude>src/ide/**</exclude>
-                <!-- does it even make sense to apply a license to a GPG signature? -->
+                
                 <exclude>**/*.asc</exclude>
-                <!-- jQuery is MIT-licensed, but RAT can't figure it out -->
+                
                 <exclude>src/site/resources/js/jquery.js</exclude>
                 <exclude>src/site/resources/js/jquery.min.js</exclude>
-                <!-- highlight.js is BSD3-licensed -->
+                
                 <exclude>src/site/resources/js/highlight.pack.js</exclude>
-                <!-- Generated files -->
+                
                 <exclude>log4j-distribution/target/**/*</exclude>
                 <exclude>log4j-distribution/.project</exclude>
                 <exclude>log4j-distribution/.settings/**</exclude>
                 <exclude>**/.toDelete</exclude>
                 <exclude>velocity.log</exclude>
-                <!-- Other -->
+                
                 <exclude>felix-cache/**</exclude>
                 <exclude>**/*.md</exclude>
                 <exclude>**/*.yml</exclude>
@@ -1922,33 +1880,15 @@
                 <exclude>**/MANIFEST.MF</exclude>
               </excludes>
             </configuration>
-            <!-- Turn this one once it passes, not before.
-            <executions>
-              <execution>
-                <phase>verify</phase>
-                <goals>
-                  <goal>check</goal>
-                </goals>
-              </execution>
-            </executions>
-            -->
+            
           </plugin>
         </plugins>
       </build>
     </profile>
     <profile>
-      <!-- http://www.yourkit.com/docs/80/help/agent.jsp -->
+      
       <id>yourkit-mac</id>
-      <!--
-      <activation>
-        <os>
-          <family>Mac</family>
-        </os>
-        <file>
-          <exists>${yourkit.home}/bin/mac/libyjpagent.jnilib</exists>
-        </file>
-      </activation>
-      -->
+      
       <properties>
         <yourkit.home>/Applications/YJP.app</yourkit.home>
       </properties>
